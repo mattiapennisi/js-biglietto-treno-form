@@ -18,20 +18,20 @@
         <form id="form-layout" action="" method="get">
             <h2 id="form-title" class="col11">Calcola il prezzo del tuo biglietto</h2>
             <label class="col5" for="nameText">Nome Cognome</label>
-            <input class="col5" type="text" name="nameText" id="nameText">
+            <input required class="col5" type="text" name="nameText" id="nameText">
             
             <label class="col5" for="kmNumber">Km da percorrere</label>
-            <input class="col5" type="text" name="kmNumber" id="kmNumber">
+            <input required class="col5" type="text" name="kmNumber" id="kmNumber">
 
-            <label class="col" for="ageSelect">Fascia d'età</label>
-            <select id="ageSelect" class="col" name="ageSelect">
+            <label class="col5" for="ageSelect" class="col6">Fascia d'età</label>
+            <select required id="ageSelect" class="col6" name="ageSelect">
                 <option value="maggiorenne">Maggiorenne</option>
                 <option value="minorenne">Minorenne</option>
                 <option value="over 65">Over 65</option>
               </select>
 
-              <button id="submit-btn" type="submit">Genera</button>
-              <button id="cancel-btn"  type="reset">Annulla</button>
+              <button id="submit-btn" type="submit" class="col2">Genera</button>
+              <button id="cancel-btn"  type="reset" class="col2">Annulla</button>
         </form>
 
         <section id="ticketPriceCont">
@@ -43,7 +43,7 @@
                     Nome passeggero
                     <div id="nameResult"></div>
                 </div>
-                <div id="offer" class="col3">
+                <div id="offer" class="col2">
                     Offerta
                     <div id="offerResult"></div>
                 </div>

@@ -337,6 +337,11 @@ body  {
             color: white;
             text-align: center;
         }
+
+        #resultTitle2 {
+            margin-left: 2rem;
+            font-weight: 500;
+        }
     }
 }
 
