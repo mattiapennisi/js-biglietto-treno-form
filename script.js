@@ -1,8 +1,8 @@
 // Chiedo all'utente il numero di chilometri che vuole percorrere e l'età del passeggero
 
-const userKm = parseInt(prompt('Quanti chilometri vuoi percorrere?'))
+const userKm = document.querySelector('')
 
-const userAge = parseInt(prompt('Quanti anni hai?'))
+const userAge = querySelector('')
 
 console.log(userKm);
 

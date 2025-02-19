@@ -12,20 +12,28 @@
     <script src="https://kit.fontawesome.com/56997e8489.js" crossorigin="anonymous"></script>
 </head>
 <body class="debu">
-    <!-- Header -->
-    <header id="header">
-
-    </header>
     
     <!-- Main -->
     <main id="main">
-        
+        <h2 id="form-title">Calcola il prezzo del tuo biglietto</h2>
+        <form id="form-layout" action="" method="get">
+            <label for="nameText">Nome Cognome</label>
+            <input type="text" name="nameText" id="nameText">
+            
+            <label for="kmNumber">Km da percorrere</label>
+            <input type="number" name="kmNumber" id="kmNumber">
+
+            <label for="ageSelect">Fascia d'età</label>
+            <select id="ageSelect" name="ageSelect">
+                <option value="minorenne">Minorenne</option>
+                <option value="maggiorenne">Maggiorenne</option>
+                <option value="over 65">Over 65</option>
+              </select>
+
+              <button id="submit-btn" type="submit">Genera</button>
+              <button id="cancel-btn"  type="submit">Annulla</button>
+        </form>
     </main>
-    
-    <!-- Footer -->
-    <footer id="footer">
-    
-    </footer>
 
     <script src="script.js"></script>
 </body>
