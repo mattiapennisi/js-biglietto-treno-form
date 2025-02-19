@@ -25,8 +25,8 @@
 
             <label for="ageSelect">Fascia d'età</label>
             <select id="ageSelect" name="ageSelect">
-                <option value="minorenne">Minorenne</option>
                 <option value="maggiorenne">Maggiorenne</option>
+                <option value="minorenne">Minorenne</option>
                 <option value="over 65">Over 65</option>
               </select>
 
@@ -34,9 +34,35 @@
               <button id="cancel-btn"  type="reset">Annulla</button>
         </form>
 
-        <p id="ticketPrice">
-            
-        </p>
+        <h2 id="resultTitle">Il tuo biglietto</h2>
+        <section id="ticketPrice">
+            <h2 id="resultTitle">Dettaglio passeggeri</h2>
+
+            <div id="resultCard" class="col12 display-flex flex-row">
+                <div id="name" class="col3">
+                    Nome passeggero
+                    <div id="nameResult"></div>
+                </div>
+                <div id="offer" class="col3">
+                    Offerta
+                    <div id="offerResult"></div>
+                </div>
+                <div id="carriage" class="col2">
+                    Carrozza
+                    <div id="carriageResult"></div>
+                </div>
+                <div id="code" class="col2">
+                    Codice Cp
+                    <div id="codeResult"></div>
+                </div>
+                <div id="ticketPrice" class="col2">
+                    Costo biglietto
+                    <div id="ticketPriceResult">
+
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
 

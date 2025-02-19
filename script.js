@@ -14,6 +14,16 @@ const cancelBtn = document.querySelector('#cancel-btn')
 
 let ticketPrice = document.querySelector('#ticketPrice')
 
+const nameResult = document.querySelector('#nameResult')
+
+const offerResult = document.querySelector('#offerResult')
+
+const carriageResult = document.querySelector('#carriageResult')
+
+const codeResult = document.querySelector('#codeResult')
+
+const ticketPriceResult = document.querySelector('#ticketPriceResult')
+
 let userKm = null
 let kmPrice = null
 
@@ -35,22 +45,32 @@ submitBtn.addEventListener('click', function () {
 
 // Applico lo sconto in base all'età dell'utente
 
+const userName = nameText.value
 let agePrice = ageSelect.value
+let finalPrice = 0
 
-if (ageSelect == 'Minorenne') {
-    agePrice = kmPrice - (kmPrice * 20 / 100)
-} else if (ageSelect == 'Over65') {
-    agePrice = kmPrice - (kmPrice * 40 / 100)
+if (agePrice == 'minorenne') {
+    finalPrice = kmPrice * 0.8
+} else if (agePrice == 'over 65') {
+    finalPrice = kmPrice * 0.6
 } else {
-    agePrice = kmPrice
+    finalPrice = kmPrice
 }
 
 // Applico al risultato il formato del prezzo con due decimali
 
-agePrice = agePrice.toFixed(2)
+finalPrice = finalPrice.toFixed(2)
 
 // Stampo a schermo il prezzo del biglietto per l'utente
 
-ticketPrice.innerText = `Il prezzo del biglietto è ${agePrice} €`
+nameResult.innerText = nameText.value
+offerResult.innerText = nameText.value
+carriageResult.innerText = nameText.value
+codeResult.innerText = nameText.value
+ticketPriceResult.innerText = nameText.value
+
+
+
+// ticketPrice.innerText = `Ciao, ${userName}! Il prezzo del tuo biglietto è ${finalPrice} €`
 
 })

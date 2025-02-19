@@ -306,6 +306,12 @@ body  {
         padding-bottom: 3rem;
         margin-top: -3rem
     }
+
+    #resultCard {
+        * {
+            margin: 1rem;
+        }
+    }
 }
 
 /* Footer */
