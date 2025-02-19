@@ -48,13 +48,17 @@ submitBtn.addEventListener('click', function () {
 const userName = nameText.value
 let agePrice = ageSelect.value
 let finalPrice = 0
+let ticketName = null
 
 if (agePrice == 'minorenne') {
     finalPrice = kmPrice * 0.8
+    ticketName = 'Biglietto Minorenni'
 } else if (agePrice == 'over 65') {
     finalPrice = kmPrice * 0.6
+    ticketName = 'Biglietto Over 65'
 } else {
     finalPrice = kmPrice
+    ticketName = 'Biglietto Standard'
 }
 
 // Applico al risultato il formato del prezzo con due decimali
@@ -64,13 +68,13 @@ finalPrice = finalPrice.toFixed(2)
 // Stampo a schermo il prezzo del biglietto per l'utente
 
 nameResult.innerText = nameText.value
-offerResult.innerText = nameText.value
-carriageResult.innerText = nameText.value
-codeResult.innerText = nameText.value
-ticketPriceResult.innerText = nameText.value
 
+offerResult.innerText = ticketName
 
+carriageResult.innerText = '7'
 
-// ticketPrice.innerText = `Ciao, ${userName}! Il prezzo del tuo biglietto è ${finalPrice} €`
+codeResult.innerText = '95349'
+
+ticketPriceResult.innerText = `${finalPrice} €`
 
 })
