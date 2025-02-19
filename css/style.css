@@ -317,6 +317,15 @@ body  {
         }
 
         padding: 2rem;
+
+        button {
+            background-color: white;
+            border-radius: 8px;
+
+            &:hover {
+                transform: scale(1.03);
+            }
+        }
     }
 
     #ticketPriceCont {
