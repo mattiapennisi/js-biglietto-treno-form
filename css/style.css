@@ -290,7 +290,7 @@ body  {
     background-color: #f1f1f1;
 
     #form-title {
-        margin-bottom: 2rem;
+        padding-bottom: 2rem;
         font-weight: 700;
         font-size: 1.5rem;
         color: white;
@@ -313,7 +313,7 @@ body  {
         justify-content: center;
 
         * {
-            margin: 1rem;
+            margin: 10px;
         }
 
         padding: 2rem;
@@ -322,7 +322,7 @@ body  {
     #ticketPriceCont {
         width: auto;
         margin: 2rem;
-        padding: 1rem;
+        padding: 10px 1rem;
         background-color: rgb(46, 100, 143);
         border-radius: 10px;
         box-shadow: 1px 1px 5px;
@@ -331,7 +331,15 @@ body  {
         vertical-align: middle;
 
         * {
-            margin: 1rem;
+            margin: 16px;
+            vertical-align: middle;
+            text-align: left;
+        }
+
+        .result {
+            font-weight: 100;
+            text-align: left;
+            vertical-align: middle;
         }
 
         #resultTitle {
@@ -344,7 +352,7 @@ body  {
 
         #resultTitle2 {
             margin-left: 2rem;
-            font-weight: 500;
+            font-weight: 700;
             text-align: left;
         }
     }
