@@ -15,16 +15,16 @@
     
     <!-- Main -->
     <main id="main">
-        <h2 id="form-title">Calcola il prezzo del tuo biglietto</h2>
         <form id="form-layout" action="" method="get">
-            <label for="nameText">Nome Cognome</label>
-            <input type="text" name="nameText" id="nameText">
+            <h2 id="form-title" class="col11">Calcola il prezzo del tuo biglietto</h2>
+            <label class="col5" for="nameText">Nome Cognome</label>
+            <input class="col5" type="text" name="nameText" id="nameText">
             
-            <label for="kmNumber">Km da percorrere</label>
-            <input type="text" name="kmNumber" id="kmNumber">
+            <label class="col5" for="kmNumber">Km da percorrere</label>
+            <input class="col5" type="text" name="kmNumber" id="kmNumber">
 
-            <label for="ageSelect">Fascia d'età</label>
-            <select id="ageSelect" name="ageSelect">
+            <label class="col" for="ageSelect">Fascia d'età</label>
+            <select id="ageSelect" class="col" name="ageSelect">
                 <option value="maggiorenne">Maggiorenne</option>
                 <option value="minorenne">Minorenne</option>
                 <option value="over 65">Over 65</option>
@@ -34,10 +34,10 @@
               <button id="cancel-btn"  type="reset">Annulla</button>
         </form>
 
-        <h2 id="resultTitle">Il tuo biglietto</h2>
-        <section id="ticketPrice">
-            <h2 id="resultTitle">Dettaglio passeggeri</h2>
-
+        <section id="ticketPriceCont">
+            <h2 id="resultTitle">Il tuo biglietto</h2>
+            <h2 id="resultTitle2">Dettaglio passeggeri</h2>
+            
             <div id="resultCard" class="col12 display-flex flex-row">
                 <div id="name" class="col3">
                     Nome passeggero
@@ -55,7 +55,7 @@
                     Codice Cp
                     <div id="codeResult"></div>
                 </div>
-                <div id="ticketPrice" class="col2">
+                <div id="ticketPrice" class="col">
                     Costo biglietto
                     <div id="ticketPriceResult">
 

@@ -84,6 +84,8 @@
 
 body  {
 
+    background-color: #f1f1f1;
+
     /* Common */
 
     img {
@@ -285,14 +287,28 @@ body  {
 #main {
     width: 100%;
     margin: auto;
+    background-color: #f1f1f1;
 
     #form-title {
         margin: 2rem 2rem 0 3rem;
         font-weight: 700;
         font-size: 1.5rem;
+        color: white;
+        text-align: center;
     }
 
     #form-layout {
+
+        width: auto;
+        margin: 2rem;
+        background-color: rgb(46, 100, 143);
+        border-radius: 10px;
+        padding: 0.5rem;
+        box-shadow: 2px 2px 2px grey;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
 
         * {
             margin: 1rem;
@@ -301,15 +317,25 @@ body  {
         padding: 2rem;
     }
 
-    #ticketPrice {
-        padding: 3rem;
-        padding-bottom: 3rem;
-        margin-top: -3rem
-    }
+    #ticketPriceCont {
+        width: auto;
+        margin: 2rem;
+        background-color: rgb(46, 100, 143);
+        border-radius: 10px;
+        padding: 0.5rem;
+        box-shadow: 1px 1px 5px;
+        color: white;
 
-    #resultCard {
         * {
             margin: 1rem;
+        }
+
+        #resultTitle {
+            margin: 2rem 2rem 0 3rem;
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: white;
+            text-align: center;
         }
     }
 }

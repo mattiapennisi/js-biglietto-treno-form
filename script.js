@@ -71,9 +71,9 @@ nameResult.innerText = nameText.value
 
 offerResult.innerText = ticketName
 
-carriageResult.innerText = '7'
+carriageResult.innerText = Math.floor(Math.random() *10) + 1
 
-codeResult.innerText = '95349'
+codeResult.innerText = Math.floor(Math.random() *100000) - 1
 
 ticketPriceResult.innerText = `${finalPrice} €`
 
