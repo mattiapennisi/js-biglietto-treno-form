@@ -1,24 +1,45 @@
-// Chiedo all'utente il numero di chilometri che vuole percorrere e l'età del passeggero
+// Variabili
 
-const userKm = document.querySelector('')
+const formLayout = document.querySelector('#form-layout')
 
-const userAge = querySelector('')
+const nameText = document.querySelector('#nameText')
 
-console.log(userKm);
+const kmNumber = document.querySelector('#kmNumber')
 
-console.log(userAge);
+const ageSelect = document.querySelector('#ageSelect')
+
+const submitBtn = document.querySelector('#submit-btn')
+
+const cancelBtn = document.querySelector('#cancel-btn')
+
+let ticketPrice = document.querySelector('#ticketPrice')
+
+let userKm = null
+let kmPrice = null
+
+// Prendo le informazioni dal form compilato dall'utente
+
+formLayout.addEventListener('submit', function (event) {
+
+event.preventDefault()
+
+})
+
+submitBtn.addEventListener('click', function () {
+
+    userKm = kmNumber.value
 
 // Calcolo il prezzo per chilometro 
 
-const kmPrice = (userKm * 0.21)
+    kmPrice = (userKm * 0.21)
 
 // Applico lo sconto in base all'età dell'utente
 
-let agePrice = 0
+let agePrice = ageSelect.value
 
-if (userAge<18) {
+if (ageSelect == 'Minorenne') {
     agePrice = kmPrice - (kmPrice * 20 / 100)
-} else if (userAge >= 65) {
+} else if (ageSelect == 'Over65') {
     agePrice = kmPrice - (kmPrice * 40 / 100)
 } else {
     agePrice = kmPrice
@@ -30,4 +51,6 @@ agePrice = agePrice.toFixed(2)
 
 // Stampo a schermo il prezzo del biglietto per l'utente
 
-alert(`Il tuo biglietto costa ${agePrice} €`)
+ticketPrice.innerText = `Il prezzo del biglietto è ${agePrice} €`
+
+})

@@ -300,6 +300,12 @@ body  {
 
         padding: 2rem;
     }
+
+    #ticketPrice {
+        padding: 3rem;
+        padding-bottom: 3rem;
+        margin-top: -3rem
+    }
 }
 
 /* Footer */
