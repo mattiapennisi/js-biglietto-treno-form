@@ -61,11 +61,11 @@ if (agePrice == 'minorenne') {
     ticketName = 'Biglietto Standard'
 }
 
-// Applico al risultato il formato del prezzo con due decimali
+// Variabile per dare il formato con due decimali al prezzo che può essere riutilizzato
 
 finalPrice = finalPrice.toFixed(2)
 
-// Stampo a schermo il prezzo del biglietto per l'utente
+// Output dei dati del biglietto
 
 nameResult.innerText = nameText.value
 
@@ -77,4 +77,16 @@ codeResult.innerText = Math.floor(Math.random() *100000) - 1
 
 ticketPriceResult.innerText = `${finalPrice} €`
 
+})
+
+cancelBtn.addEventListener('click', function () {
+    nameResult.innerText = ''
+
+    offerResult.innerText = ''
+
+    carriageResult.innerText = ''
+
+    codeResult.innerText = ''
+
+    ticketPriceResult.innerText = ``
 })
