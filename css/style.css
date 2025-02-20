@@ -289,6 +289,15 @@ body  {
     margin: auto;
     background-color: #f1f1f1;
 
+    * {
+        border-radius: 5px;
+        border: 0px;
+    }
+
+    button {
+        padding: 5px;
+    }
+
     #form-title {
         padding-bottom: 2rem;
         font-weight: 700;
